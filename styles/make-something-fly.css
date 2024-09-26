@@ -30,7 +30,7 @@
     pointer-events: none;
     font-size: 6rem;
     display: none;
-    width: 10rem;
+    width: 30rem;
 }
 
 @keyframes fly {
@@ -68,6 +68,5 @@
 
     100% {
         transform: translate(-200%,110vh) rotateZ(0deg);
-        opacity: 1;
     }
 }
