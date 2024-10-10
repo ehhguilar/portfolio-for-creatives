@@ -10,11 +10,47 @@
 
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
-@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+  font-family: 'ZT Talk SemBd';
+  src: url('../fonts/ZTTalk-SemiBold.eot');
+  src: url('../fonts/ZTTalk-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ZTTalk-SemiBold.woff2') format('woff2'),
+      url('../fonts/ZTTalk-SemiBold.woff') format('woff'),
+      url('../fonts/ZTTalk-SemiBold.ttf') format('truetype'),
+      url('../fonts/ZTTalk-SemiBold.svg#ZTTalk-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ZT Talk';
+  src: url('../fonts/ZTTalk-Regular.eot');
+  src: url('../fonts/ZTTalk-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ZTTalk-Regular.woff2') format('woff2'),
+      url('../fonts/ZTTalk-Regular.woff') format('woff'),
+      url('../fonts/ZTTalk-Regular.ttf') format('truetype'),
+      url('../fonts/ZTTalk-Regular.svg#ZTTalk-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ZT Talk Med';
+  src: url('../fonts/ZTTalk-Medium.eot');
+  src: url('../fonts/ZTTalk-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ZTTalk-Medium.woff2') format('woff2'),
+      url('../fonts/ZTTalk-Medium.woff') format('woff'),
+      url('../fonts/ZTTalk-Medium.ttf') format('truetype'),
+      url('../fonts/ZTTalk-Medium.svg#ZTTalk-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 
 /*
 
@@ -56,7 +92,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/branding-images/gremmy-cursor.png"), auto !important;
+  cursor: url("../assets/branding-images/creativecreature-cursor-v2.png"), auto !important;
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -85,36 +121,36 @@ button:hover {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: "Eczar", serif;
-  --project-title-typeface: "Eczar", serif;
-  --background-color: #ebedf0;
-  --background-color-about: #ebedf0;
-  --background-color-footer: #ebedf0;
-  --alt-background-color: #000000;
+  --body-typeface: 'ZT Talk';
+  --heading-typeface: 'ZT Talk Med';
+  --project-title-typeface: 'ZT Talk SemBd';
+  --background-color: #1F1F1F;
+  --background-color-about: #1F1F1F;
+  --background-color-footer: #1F1F1F;
+  --alt-background-color: #1F1F1F;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #2c2c28;
-  --h2-color: #2c2c28;
-  --h3-color: #2c2c28;
-  --h4-color: #2c2c28;
-  --h5-color: #2c2c28;
-  --h6-color: #2c2c28;
-  --primary-text-color: #222;
+  --h1-color: #D9D9D9;
+  --h2-color: #D9D9D9;
+  --h3-color: #D9D9D9;
+  --h4-color: #D9D9D9;
+  --h5-color: #D9D9D9;
+  --h6-color: #D9D9D9;
+  --primary-text-color: #D9D9D9;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #26c5fc;
+  --accent-color: #5197FF;
   --overlay-color: black;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
-  --hyperlink-alternate-color: #26c5fc;
-  --hover-color: #26c5fc;
-  --visited-color: #5200ff;
-  --project-title-color: #2c2c28;
-  --project-sidebar-background-color: #fcfcfa;
+  --hyperlink-color: #5197FF;
+  --hyperlink-alternate-color: #5197FF;
+  --hover-color: #1F1F1F1F1F1F1F1F1F;
+  --visited-color: #5197FF;
+  --project-title-color: ##D9D9D9;
+  --project-sidebar-background-color: #1F1F1F;
   --project-sidebar-text-color: 322f39;
   --heart-color: darkred;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #26c5fc;
+  --holding-page-footer-color: #1F1F1F;
+  --text-selection-background-color: #5197FF;
   /*
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
@@ -162,7 +198,7 @@ svg {
 h1 {
   font-size: 1rem;
   margin-bottom: 1rem;
-    font-family: "Nanum Gothic", sans-serif;
+
     font-weight: 400;
     font-style: normal;
     line-height: 1.2;
@@ -173,17 +209,14 @@ h2 {
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
-  font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h3 {
   font-size: 1.325rem;
-  margin-bottom: 1rem;
   line-height: 1.3;
   color: var(--h3-color);
-  font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -340,8 +373,8 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
-  align-items: flex-start;
+  align-items: center;
+  padding: 5rem;
 }
 
 .logo {
@@ -356,14 +389,25 @@ a:active {
   align-items: center;
   justify-content: center;
   padding: 2rem 4rem;
-  text-align: center;
+  text-align: left;
+}
+
+.headline-blurb {
+  padding-right: 35%;
+  padding-bottom: 15%;
+}
+
+.navigation-bar {
+  height: 15vh;
+  position: sticky;
+  top: 0;
 }
 
 body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: #fcfcfa;
+  background-color: #1F1F1F;
 }
 
 .wordmark-wrapper {
@@ -402,6 +446,50 @@ body {
   padding: 1rem;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+.menu-wrapper {
+  width: 20%;
+}
+
+.logo {
+width: 5rem;
+}
+
+.menu {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.menu-item {
+  padding: 0.7rem;
+  margin: 0.5rem;
+}
+.custom-navigation {
+  font-size: 1rem;
+}
+
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -412,8 +500,25 @@ body {
 
 */
 
+.work-blurb {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: left;
+  justify-content: left;
+  padding: 2rem 4rem;
+  text-align: left;
+  padding-bottom: 0;
+  padding-right: 10%;
+}
+
+.world-blurb-paragraph {
+  padding-bottom: 8%;
+}
+
 .work-wrapper {
   flex: 1;
+  padding-top: 300px;
 }
 
 /* Padding around work grid and project page */
@@ -461,6 +566,7 @@ body {
   visibility: visible;
   opacity: 0.8;
 }
+
 
 /* 
 
@@ -514,8 +620,7 @@ body {
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 30vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -732,7 +837,7 @@ body {
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 3.9rem;
   }
 
   h2 {
@@ -744,12 +849,17 @@ body {
   }
 
   .logo {
-    width: 5rem;
+    width: 5%;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
   .hero {
     min-height: 100vh;
+  }
+
+
+  .branding-navigation {
+    padding: 2rem 5rem 2rem 5rem;
   }
 
   .hero-headline-wrapper {
@@ -885,6 +995,6 @@ body {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(1080px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
   }
 }
