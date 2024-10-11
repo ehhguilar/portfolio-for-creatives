@@ -394,7 +394,7 @@ a:active {
 
 .headline-blurb {
   padding-right: 35%;
-  padding-bottom: 15%;
+  padding-bottom: 20%;
 }
 
 .navigation-bar {
@@ -490,6 +490,11 @@ width: 5rem;
   font-size: 1rem;
 }
 
+.project-item {
+min-width: 4rem;
+}
+
+
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -509,11 +514,12 @@ width: 5rem;
   padding: 2rem 4rem;
   text-align: left;
   padding-bottom: 0;
-  padding-right: 10%;
+  padding-right: 12%;
 }
 
-.world-blurb-paragraph {
+.work-blurb-paragraph {
   padding-bottom: 8%;
+  padding-top: 14%;
 }
 
 .work-wrapper {
@@ -525,6 +531,39 @@ width: 5rem;
 .portfolio,
 .project-wrapper {
   padding: 0.25rem;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.project-page-description {
+  text-align: left;
+  align-items: top;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem;
+  padding-bottom: 2rem;
+}
+
+.project-title-block {
+  display: flex;
+  line-height: 2.5rem;
+  justify-content: space-between;
+  margin-right: 7rem;
+}
+
+.description {
+  padding-left: 4rem;
+  padding-right: 3rem;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+
+.portfolio-project-images {
+  min-width: 100%;
+  justify-content: center;
 }
 
 /* Defining the work page grid */
@@ -605,6 +644,10 @@ width: 5rem;
 .about-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+}
+
+.about-info {
+  padding-top: 4%;
 }
 
 /* Global Footer
@@ -883,7 +926,9 @@ width: 5rem;
 
   .about {
     padding: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1rem;
+    margin-right: 12rem;
+    grid-template-columns: 1fr 1fr;
   }
 
   .global-footer {
