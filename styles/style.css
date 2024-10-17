@@ -204,6 +204,15 @@ h1 {
     line-height: 1.2;
 }
 
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+}
+
 h2 {
   font-size: 2.25rem;
   font-family: var(--heading-typeface);
@@ -267,6 +276,7 @@ em {
 .overlay-title {
   font-size: 2.875rem;
   color: var(--overlay-title-color);
+ margin-bottom: .5rem;
 }
 
 .overlay-description {
@@ -281,7 +291,7 @@ a:link {
 }
 
 a:visited {
-  color: var(--visited-color);
+  color: #ebedf0;
 }
 
 a:hover {
@@ -353,6 +363,26 @@ a:active {
   margin-bottom: 1rem;
 }
 
+.project-page-blurb {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.h2, .project-page-blurb {
+  line-height: 0.5;
+}
+
+.h4, .project-title {
+  padding-top: 3rem;
+}
+
+.p, .project-description {
+  padding-top: 1rem;
+  font-size: 1.39rem;
+}
+
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -377,6 +407,15 @@ a:active {
   padding: 5rem;
 }
 
+.branding-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+}
+
 .logo {
   width: 3rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
@@ -388,12 +427,18 @@ a:active {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
   text-align: left;
+  padding-bottom: 10rem;
 }
 
 .headline-blurb {
-  padding-right: 35%;
+  padding-right: 45%;
+  padding-bottom: 20%;
+}
+
+.headline-blurb {
+  padding-right: 1%;
   padding-bottom: 20%;
 }
 
@@ -462,6 +507,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color:#5197FF
 }
 
 
@@ -504,6 +550,13 @@ min-width: 4rem;
  ███ ███   ██████  ██   ██ ██   ██     ██      ██   ██  ██████  ███████ 
 
 */
+.blue-text {
+  color:#5197FF
+}
+
+.featured-project-image {
+  min-width: 200px;
+}
 
 .work-blurb {
   display: flex;
@@ -517,14 +570,27 @@ min-width: 4rem;
   padding-right: 12%;
 }
 
+.work-blurb {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: left;
+  justify-content: left;
+  padding: 1rem 1rem;
+  text-align: left;
+  padding-bottom: 0;
+}
+
 .work-blurb-paragraph {
   padding-bottom: 8%;
-  padding-top: 14%;
+  padding-top: 10%;
 }
 
 .work-wrapper {
   flex: 1;
   padding-top: 300px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
 }
 
 /* Padding around work grid and project page */
@@ -570,6 +636,7 @@ min-width: 4rem;
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 400px 400px 400px;
   grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -648,6 +715,47 @@ min-width: 4rem;
 
 .about-info {
   padding-top: 4%;
+  font-size: 2rem;
+}
+
+.about-info {
+  padding-top: 3rem;
+  font-size: 2rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.about-info-extra {
+  padding-top: 4%;
+  font-size: 2rem;
+}
+
+.about-info-list {
+  font-size: 1.3rem;
+}
+
+.about-info-list {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.about-block, .about-cta {
+  padding-top: 2rem;
+}
+
+.p, .about-description {
+  font-size: 1.39rem;
+}
+
+.about-description {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.about-header {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }
 
 /* Global Footer
@@ -666,6 +774,12 @@ min-width: 4rem;
   min-height: 30vh;
   background: var(--background-color-footer);
   padding: 1rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.li, .footer-item {
+  line-height: 2rem;
 }
 
 .footer-item-1 {
@@ -735,6 +849,10 @@ min-width: 4rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 350px;
 }
 
 .project-image {
@@ -818,6 +936,16 @@ min-width: 4rem;
   font-size: 0.8rem;
   color: var(--holding-page-footer-color);
   margin-bottom: 0;
+  opacity: 60%;
+  color: #C1C1C1
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--holding-page-footer-color);
+  margin-bottom: 0;
+  opacity: 60%;
+  color: #C1C1C1
 }
 
 /*
@@ -906,7 +1034,7 @@ min-width: 4rem;
   }
 
   .hero-headline-wrapper {
-    padding: 4rem 8rem;
+    padding: 6rem 8rem;
   }
 
   .grid {
@@ -934,6 +1062,18 @@ min-width: 4rem;
   .global-footer {
     padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .global-footer {
+    padding: 4rem 4rem 0 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+.footer-header {
+    padding: 4rem 4rem 0 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.5rem;
   }
 
   .about-item-1 {
@@ -1042,4 +1182,38 @@ min-width: 4rem;
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
   }
+
+  .project-page-blurb {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    padding-top: 6rem;
+    justify-content: space-between;
+  }
+
+  .project-description {
+    font-size: 1.29rem;
+    padding-top: 0;
+    padding-left:10%;
+    padding-right: 7rem;
+    line-height: 1.5rem;
+  }
+
+  .project-title{
+    flex-grow: 4;
+    flex-shrink: 0;
+    padding-top: .5rem;
+    padding-left: 10%;
+  }
+
+  .headline-blurb {
+    font-size: 4rem;
+    padding-right: 30%;
+  }
+
+  .work-blurb {
+    padding-left: 3rem;
+    padding-right: 10rem;
+  }
+  
 }
