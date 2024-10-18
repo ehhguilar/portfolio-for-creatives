@@ -222,6 +222,16 @@ h2 {
   font-style: normal;
 }
 
+h2, .footer-header {
+  font-size: 1.5rem;
+  font-family: var(--heading-typeface);
+  margin-bottom: 1rem;
+  color: var(--h2-color);
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: .5rem;
+}
+
 h3 {
   font-size: 1.325rem;
   line-height: 1.3;
@@ -588,7 +598,7 @@ min-width: 4rem;
 
 .work-wrapper {
   flex: 1;
-  padding-top: 300px;
+  padding-top: 200px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
 }
@@ -672,6 +682,48 @@ min-width: 4rem;
   visibility: visible;
   opacity: 0.8;
 }
+
+.program-software-row {
+    display: flex;            /* Enable flexbox layout */
+    list-style-type: none;   /* Remove bullet points */
+    padding: 0;              /* Remove padding */
+    margin: 0;               /* Remove margin */
+    padding-left: .5rem;
+}
+
+.program-software-row li {
+    margin: 10px 8px;          /* Add some space between images */
+}
+
+.program-software-row img {
+    max-width: 100%;         /* Ensure images are responsive */
+    height: 5vh;            /* Maintain aspect ratio */
+    display: block;          /* Remove bottom space from images */
+}
+
+
+.contact-row {
+    display: flex;            /* Enable flexbox layout */
+    list-style-type: none;   /* Remove bullet points */
+    padding: 0;              /* Remove padding */
+    margin: 0;               /* Remove margin */
+    justify-content: center;
+}
+
+.contact-row li {
+    margin: 10px 10px;          /* Add some space between images */
+}
+
+.contact-row img {
+    max-width: 100%;         /* Ensure images are responsive */
+    height: 4vh;            /* Maintain aspect ratio */
+    display: block;          /* Remove bottom space from images */
+}
+
+.email-hover {
+  transition: opacity 1s ease-out;
+}
+
 
 
 /* 
@@ -795,6 +847,7 @@ min-width: 4rem;
 .footer-item-3 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  padding-top: 3rem;
 }
 
 .footer-item-4 {
@@ -804,6 +857,10 @@ min-width: 4rem;
 
 .awards-list {
   margin-bottom: 2rem;
+}
+
+.footer-header {
+  font-size: 1rem;
 }
 
 /* Project Page 
@@ -943,9 +1000,13 @@ min-width: 4rem;
 .copyright {
   font-size: 0.8rem;
   color: var(--holding-page-footer-color);
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   opacity: 60%;
   color: #C1C1C1
+}
+
+li, .copyright {
+  margin-bottom: .25rem;
 }
 
 /*
@@ -1073,7 +1134,7 @@ min-width: 4rem;
 .footer-header {
     padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 0.5rem;
+    font-size: 0.1rem;
   }
 
   .about-item-1 {
@@ -1162,6 +1223,24 @@ min-width: 4rem;
   .arrow {
     padding-right: 1rem;
   }
+
+    .program-software-row {
+    display: flex;            /* Enable flexbox layout */
+    list-style-type: none;   /* Remove bullet points */
+    padding: 0;              /* Remove padding */
+    margin: 0;               /* Remove margin */
+    padding-left: .5rem;
+}
+
+.program-software-row li {
+    margin: 10px 10px;          /* Add some space between images */
+}
+
+.program-software-row img {
+    max-width: 100%;         /* Ensure images are responsive */
+    height: 11vh;            /* Maintain aspect ratio */
+    display: block;          /* Remove bottom space from images */
+}
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
@@ -1172,6 +1251,24 @@ min-width: 4rem;
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(1080px, 1fr));
   }
+
+    .program-software-row {
+    display: flex;            /* Enable flexbox layout */
+    list-style-type: none;   /* Remove bullet points */
+    padding: 0;              /* Remove padding */
+    margin: 0;               /* Remove margin */
+    padding-left: .5rem;
+}
+
+.program-software-row li {
+    margin: 10px 10px;          /* Add some space between images */
+}
+
+.program-software-row img {
+    max-width: 100%;         /* Ensure images are responsive */
+    height: 11vh;            /* Maintain aspect ratio */
+    display: block;          /* Remove bottom space from images */
+}
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -1215,5 +1312,27 @@ min-width: 4rem;
     padding-left: 3rem;
     padding-right: 10rem;
   }
+
+  .program-software-row {
+    display: flex;            /* Enable flexbox layout */
+    list-style-type: none;   /* Remove bullet points */
+    padding: 0;              /* Remove padding */
+    margin: 0;               /* Remove margin */
+    padding-left: 2.5rem;
+}
+
+.program-software-row li {
+    margin: 10px 10px;          /* Add some space between images */
+}
+
+.program-software-row img {
+    max-width: 100%;         /* Ensure images are responsive */
+    height: 11vh;            /* Maintain aspect ratio */
+    display: block;          /* Remove bottom space from images */
+}
+
+.work-wrapper {
+  padding-top: 30rem;
+}
   
 }
