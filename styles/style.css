@@ -124,10 +124,10 @@ button:hover {
   --body-typeface: 'ZT Talk';
   --heading-typeface: 'ZT Talk Med';
   --project-title-typeface: 'ZT Talk SemBd';
-  --background-color: #1F1F1F;
-  --background-color-about: #1F1F1F;
-  --background-color-footer: #1F1F1F;
-  --alt-background-color: #1F1F1F;
+  --background-color: #171717;
+  --background-color-about: #171717;
+  --background-color-footer: #171717;
+  --alt-background-color: #171717;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
   --h1-color: #D9D9D9;
   --h2-color: #D9D9D9;
@@ -146,10 +146,10 @@ button:hover {
   --hover-color: #1F1F1F1F1F1F1F1F1F;
   --visited-color: #5197FF;
   --project-title-color: ##D9D9D9;
-  --project-sidebar-background-color: #1F1F1F;
+  --project-sidebar-background-color: #171717;
   --project-sidebar-text-color: 322f39;
   --heart-color: darkred;
-  --holding-page-footer-color: #1F1F1F;
+  --holding-page-footer-color: #171717;
   --text-selection-background-color: #5197FF;
   /*
   --linear-gradient-color-1: #ff057c;
@@ -237,7 +237,7 @@ h2, .footer-header {
 }
 
 .project-page-subtitle {
-  font-family: ;
+
 }
 
 h3 {
@@ -422,7 +422,8 @@ a:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .hero-header {
@@ -430,8 +431,7 @@ a:active {
   position: -webkit-sticky;
   top: 0;
   overflow: hidden;
-  background-color: #1F1F1F;
-  width: 100vw;
+  width: 100%;
   z-index: 6;
 }
 
@@ -450,24 +450,37 @@ a:active {
 }
 
 .hero-headline-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 4rem 4rem;
+  padding-top: 5rem;
   text-align: left;
   padding-bottom: 10rem;
 }
 
 .headline-blurb {
-  padding-right: 45%;
+  padding-right: 75%;
   padding-bottom: 20%;
+  padding-left: 2rem;
+  font-size: 1rem;
 }
 
 .headline-blurb {
-  padding-right: 1%;
+  padding-right: 10%;
   padding-bottom: 20%;
+  font-size: 1.3rem;
+  opacity: 70%;
+}
+
+.hero-headline {
+padding-bottom: 2rem;
+padding-right: 5rem;
+padding-left: 2rem;
+}
+
+.gremmy-animation {
+  padding-left: 7rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
 }
 
 .navigation-bar {
@@ -480,7 +493,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: #1F1F1F;
+  background-color: #171717;
 }
 
 .wordmark-wrapper {
@@ -558,7 +571,7 @@ width: 5rem;
 
 .menu-item {
   padding: 0.7rem;
-  margin: 0.5rem;
+  margin: 0.4rem;
 }
 .custom-navigation {
   font-size: 1rem;
@@ -627,6 +640,13 @@ min-width: 4rem;
     font-size: 1.6rem;
   }
 
+  .gremmy-animation {
+    height: 25vh;
+  }
+
+  .bio-header {
+    opacity: 70%;
+  }
 
 
 
@@ -671,7 +691,7 @@ min-width: 4rem;
 }
 
 .work-blurb-paragraph {
-  padding-bottom: 8%;
+  padding-bottom: 5%;
   padding-top: 10%;
 }
 
@@ -685,10 +705,18 @@ min-width: 4rem;
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 0.25rem;
+  padding: 10rem;
 }
 
 * {
+  scroll-behavior: smooth;
+}
+
+.scrollTo {
+  scroll-behavior: smooth;
+}
+
+.portfolio {
   scroll-behavior: smooth;
 }
 
@@ -719,6 +747,8 @@ min-width: 4rem;
 .portfolio-project-images {
   min-width: 100%;
   justify-content: center;
+  padding-left: 2vh;
+  padding-right: 2vh;
 }
 
 /* Defining the work page grid */
@@ -735,6 +765,17 @@ min-width: 4rem;
   height: auto;
   position: relative;
   /* Required to contain overlay size */
+}
+
+.grid-project-title {
+  font-size: 4vh;
+  margin: 0;
+  padding-top: 1vh;
+}
+
+.grid-project-description {
+  font-size: 2vh;
+  padding-bottom: 3vh;
 }
 
 /* Overlay */
@@ -804,7 +845,21 @@ min-width: 4rem;
   transition: opacity 1s ease-out;
 }
 
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* allows items to wrap to the next line */
+  max-width: 800px; /* maximum width of the grid */
+  gap: 10px; /* space between images */
+  overflow: hidden;
+}
 
+.image-grid img {
+  flex: 0 1 calc(50% - 10px); /* 50% width minus the gap */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 5px; /* optional: rounded corners */
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
 
 
 
@@ -885,6 +940,7 @@ min-width: 4rem;
 .about-description {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
+  padding-top: 1rem;
 }
 
 .about-header {
@@ -1364,29 +1420,27 @@ li, .copyright {
 
   .project-page-blurb {
     display: flex;
-    padding-left: 1rem;
-    padding-right: 5rem;
-    padding-top: 6rem;
     justify-content: space-between;
   }
 
   .project-description {
-    font-size: 1.29rem;
+    font-size: 2rem;
     padding-top: 0;
-    padding-left:10%;
-    padding-right: 7rem;
-    line-height: 1.5rem;
+    padding-left:30%;
+    padding-right: 5rem;
+    line-height: 2.2rem;
   }
 
   .project-title{
     flex-grow: 4;
     flex-shrink: 0;
     padding-top: .5rem;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 10%;
   }
 
   .headline-blurb {
-    font-size: 4rem;
+    font-size: 2rem;
     padding-right: 30%;
   }
 
@@ -1441,5 +1495,83 @@ li, .copyright {
   .featured-project-overlay-text, h3 {
     font-size: 2rem;
   }
+
+  .branding-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 10vh;
+  }
+
+  .work-image-grid {
+    display: flex;
+    flex-wrap: wrap; /* allows items to wrap to the next line */
+    max-width: 100%; /* maximum width of the grid */
+    gap: 1vh; /* space between images */
+    justify-content: space-between;
+    margin: 19vh;
+    height: auto;
+}
+
+.image-grid img {
+  width: calc(50% - 20px); /* Adjust width for margin */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure images don’t overflow */
+  min-width: 50%;
+  }
+
+  .work-image-resize {
+  max-width: 700px;
+  width: auto;
+  }
+
+  .project-image-grid {
+    display: flex;
+    flex-wrap: wrap; /* allows items to wrap to the next line */
+    max-width: 100%; /* maximum width of the grid */
+    gap: 1vh; /* space between images */
+    justify-content: space-between;
+    margin: 19vh;
+    height: auto;
+}
+
+.project-grid img {
+  width: calc(50% - 20px); /* Adjust width for margin */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure images don’t overflow */
+  }
+
+  .project-image-resize {
+  max-width: 700px;
+  width: auto;
+  }
+
+  .hero-headline {
+    flex-grow: 4;
+    flex-shrink: 0;
+    max-width: 40vw;
+  }
+  
+  .gremmy-animation {
+    flex-grow: 4;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 34vw;
+    
+  }
+  
+  .hero-headline-wrapper {
+    display: flex;
+    padding-right: 11vw;
+    padding-left: 10vw;
+    padding-top: 6rem;
+    justify-content: space-between;
+  
+  }
+
   
 }
