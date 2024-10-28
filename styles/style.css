@@ -411,6 +411,7 @@ a:active {
                                  
 */
 
+
 .hero {
   min-height: 80vh;
   display: flex;
@@ -467,8 +468,8 @@ a:active {
 .headline-blurb {
   padding-right: 10%;
   padding-bottom: 20%;
-  font-size: 1.3rem;
-  opacity: 70%;
+  font-size: 1.8rem;
+  opacity: 60%;
 }
 
 .hero-headline {
@@ -478,9 +479,9 @@ padding-left: 2rem;
 }
 
 .gremmy-animation {
-  padding-left: 7rem;
-  padding-right: 3rem;
   padding-top: 1rem;
+  height: 10vh;
+  width: 100vw;
 }
 
 .navigation-bar {
@@ -646,6 +647,7 @@ min-width: 4rem;
 
   .bio-header {
     opacity: 70%;
+    padding-left: 1rem;
   }
 
 
@@ -714,10 +716,19 @@ min-width: 4rem;
 
 .scrollTo {
   scroll-behavior: smooth;
+  padding: 2rem;
+  padding-top: 10vh;
 }
 
 .portfolio {
   scroll-behavior: smooth;
+}
+
+.project-thumbnail-headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-page-description {
@@ -768,14 +779,27 @@ min-width: 4rem;
 }
 
 .grid-project-title {
-  font-size: 4vh;
-  margin: 0;
+  font-size: 2.3vh;
   padding-top: 1vh;
 }
 
 .grid-project-description {
-  font-size: 2vh;
-  padding-bottom: 3vh;
+  font-size: 2.3vh;
+  opacity: 70%;
+  padding-top: 1vh;
+}
+
+.project-thumbnail-headers {
+  display: flex;
+  
+}
+
+.portfolio-folder-img {
+  padding-bottom: 2rem;
+}
+
+.scrollTo {
+  padding-top: 20vh;
 }
 
 /* Overlay */
@@ -1442,6 +1466,7 @@ li, .copyright {
   .headline-blurb {
     font-size: 2rem;
     padding-right: 30%;
+    line-height: 2.3rem;
   }
 
   .work-blurb {
@@ -1454,16 +1479,19 @@ li, .copyright {
     list-style-type: none;   /* Remove bullet points */
     padding: 0;              /* Remove padding */
     margin: 0;               /* Remove margin */
-    padding-left: 2.5rem;
+    padding-bottom: 6rem;
+    padding-left: 14.5vw;
+    padding-right: 10vw;
+    justify-content: center;
 }
 
 .program-software-row li {
-    margin: 10px 10px;          /* Add some space between images */
+    margin: 20px 20px;          /* Add some space between images */
 }
 
 .program-software-row img {
     max-width: 100%;         /* Ensure images are responsive */
-    height: 11vh;            /* Maintain aspect ratio */
+    height: 12.4vh;            /* Maintain aspect ratio */
     display: block;          /* Remove bottom space from images */
 }
 
@@ -1524,8 +1552,8 @@ li, .copyright {
   }
 
   .work-image-resize {
-  max-width: 700px;
   width: auto;
+  padding-top: 10vh;
   }
 
   .project-image-grid {
@@ -1536,6 +1564,13 @@ li, .copyright {
     justify-content: space-between;
     margin: 19vh;
     height: auto;
+}
+
+.project-section {
+  width: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-grid img {
@@ -1560,7 +1595,7 @@ li, .copyright {
     flex-shrink: 0;
     width: 100%;
     height: 100%;
-    min-width: 34vw;
+    min-width: 32vw;
     
   }
   
@@ -1572,6 +1607,26 @@ li, .copyright {
     justify-content: space-between;
   
   }
+
+  .grid-project-title {
+    font-size: 3vh;
+    padding-top: 1vh;
+  }
+  
+  .grid-project-description {
+    font-size: 3vh;
+    opacity: 70%;
+    padding-top: 1vh;
+  }
+  
+  .scrollTo {
+    padding-top: 3vh;
+  }
+  .bio-header {
+    opacity: 60%;
+    padding-left: 3rem;
+  }
+  
 
   
 }
