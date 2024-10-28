@@ -92,12 +92,17 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/branding-images/creativecreature-cursor-v2.png"), auto !important;
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-v3.cur"), auto !important;
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
+  
 }
 
 button:hover {
-  cursor: url("../assets/branding-images/gremmy-cursor.png"), pointer;
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), pointer;
+}
+
+.hover-item:hover {
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), auto; /* Use your custom cursor */
 }
 
 *,
@@ -351,6 +356,7 @@ a:active {
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v4.cur"), auto;
 }
 
 .heart {
@@ -885,6 +891,14 @@ min-width: 4rem;
   padding-right: 1vh;
 }
 
+.work-image-resize {
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), auto;
+  }
+
+.brand-logo {
+    cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), auto;
+ }
+  
 
 
 /* 
@@ -1554,6 +1568,7 @@ li, .copyright {
   .work-image-resize {
   width: auto;
   padding-top: 10vh;
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), auto;
   }
 
   .project-image-grid {
