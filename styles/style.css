@@ -474,7 +474,7 @@ a:active {
 .headline-blurb {
   padding-right: 10%;
   padding-bottom: 20%;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   opacity: 60%;
 }
 
@@ -482,12 +482,13 @@ a:active {
 padding-bottom: 2rem;
 padding-right: 5rem;
 padding-left: 2rem;
+width: 100vw;
 }
 
 .gremmy-animation {
-  padding-top: 1rem;
   height: 10vh;
-  width: 100vw;
+  width: 90vw;
+  margin-left: 2rem;
 }
 
 .navigation-bar {
@@ -648,7 +649,7 @@ min-width: 4rem;
   }
 
   .gremmy-animation {
-    height: 25vh;
+    height: 35vh;
   }
 
   .bio-header {
