@@ -602,6 +602,7 @@ min-width: 4rem;
   height:85vh;
   max-width: 97vw;
   border-radius: 8px;
+  mask-image: linear-gradient(black, transparent);
   /* Work Page Layot
   aspect-ratio: 1 / 1;
 */
@@ -919,6 +920,10 @@ min-width: 4rem;
                                            
 */
 
+.about-opacity {
+  opacity: 60%;
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr;
@@ -955,13 +960,17 @@ min-width: 4rem;
 
 .about-info {
   padding-top: 3rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
+  opacity: 60%;
+}
+
+.strikethrough {
+  opacity: 60%;
 }
 
 .about-info-extra {
-  padding-top: 4%;
   font-size: 2rem;
 }
 
@@ -992,6 +1001,7 @@ min-width: 4rem;
 .about-header {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
+  padding-top: 2rem;
 }
 
 /* Global Footer
@@ -1236,10 +1246,15 @@ padding-left: 2.2rem;
 
 .holding-page-animation {
   margin-bottom: 1rem;
+  width: 20vw;
 }
 
 .holding-page-title {
-  font-size: 1.5rem;
+  font-size: 0.1rem;
+  color: var(--holding-page-title-color);
+}
+.holding-page-title p {
+  font-size: 0.2rem;
   color: var(--holding-page-title-color);
 }
 
@@ -1813,9 +1828,8 @@ margin-left: -.4vw;
     padding: 0;              /* Remove padding */
     margin: 0;               /* Remove margin */
     padding-bottom: 6rem;
-    padding-left: 14.5vw;
+    padding-left: 1.7vw;
     padding-right: 10vw;
-    justify-content: center;
 }
 
 .program-software-row li {
@@ -1863,7 +1877,7 @@ margin-left: -.4vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2vh;
+    padding-top: 3vh;
     padding-bottom: 2vh;
     padding-left: 10vh;
   }
@@ -1949,7 +1963,6 @@ margin-left: -.4vw;
   }
   
   .grid-project-description {
-    font-size: 2vh;
     opacity: 70%;
     padding-top: 1vh;
   }
@@ -1989,6 +2002,27 @@ margin-left: -.4vw;
 .footer-logo {
   width: 6.5vw;
   margin-left: 2.5vw;
+}
+.about-image {
+  max-width: 40vw;
+}
+
+.grid-project-description {
+  font-size: 3vh;
+  opacity: 70%;
+  padding-top: 1vh;
+}
+
+.p, .about-description, .about-info-list{
+  font-size: 1.5rem;
+}
+
+.brand-logo-icon {
+  width: 5vw;
+}
+
+.logo {
+  width: 5.5vw;
 }
 
 }
