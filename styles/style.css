@@ -50,8 +50,6 @@
 }
 
 
-
-
 /*
 
 Imported stylesheets. Remove the ones you do not want to use.
@@ -102,7 +100,15 @@ button:hover {
 }
 
 .hover-item:hover {
-  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), auto; /* Use your custom cursor */
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-3.cur"), auto; /* Use your custom cursor */
+}
+
+.footer-links a:hover {
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), pointer; /* Use your custom cursor */
+}
+
+.next-project a:hover {
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), pointer; /* Use your custom cursor */
 }
 
 *,
@@ -110,6 +116,13 @@ button:hover {
 *:after {
   box-sizing: inherit;
 }
+
+.next-project {
+  padding-top: 4rem;
+}
+
+
+
 
 /* Use variable for to easily change your theme's colour scheme and typography.
 
@@ -141,15 +154,15 @@ button:hover {
   --h5-color: #D9D9D9;
   --h6-color: #D9D9D9;
   --primary-text-color: #D9D9D9;
-  --holding-page-title-color: #ebedf0;
+  --holding-page-title-color: #D9D9D9;
   --accent-color: #5197FF;
   --overlay-color: black;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
+  --overlay-title-color: #D9D9D9;
+  --overlay-description-color: #D9D9D9;
   --hyperlink-color: #5197FF;
   --hyperlink-alternate-color: #5197FF;
-  --hover-color: ##5197FF;
-  --visited-color: #5197FF;
+  --hover-color: #5197FF;
+  --visited-color: #D9D9D9;
   --project-title-color: ##D9D9D9;
   --project-sidebar-background-color: #171717;
   --project-sidebar-text-color: 322f39;
@@ -599,7 +612,7 @@ min-width: 4rem;
   min-height: calc(7vh + 200px);
   max-width: 500%;
   min-width: 100vw;
-  height:85vh;
+  height:90vh;
   max-width: 97vw;
   border-radius: 8px;
   mask-image: linear-gradient(black, transparent);
@@ -659,6 +672,11 @@ min-width: 4rem;
     padding-left: 1rem;
   }
 
+  .work-blurb-paragraph {
+    padding-top: 10rem;
+  }
+  
+
 
 
 /* Work Page Layout
@@ -677,6 +695,7 @@ min-width: 4rem;
 .featured-project-image {
   min-width: 200px;
   max-width: 93vw;
+  max-height: 60vh;
 }
 
 .scrollTo {
@@ -693,6 +712,11 @@ min-width: 4rem;
   text-align: left;
   padding-bottom: 0;
   padding-right: 12%;
+  font-size: 1.25rem;
+}
+
+.next-project {
+  text-align: center;
 }
 
 .work-blurb {
@@ -708,7 +732,6 @@ min-width: 4rem;
 
 .work-blurb-paragraph {
   padding-bottom: 5%;
-  padding-top: 10%;
 }
 
 .work-wrapper {
@@ -730,7 +753,7 @@ min-width: 4rem;
 
 .scrollTo {
   scroll-behavior: smooth;
-  padding: 2rem;
+  padding: 1rem;
   padding-top: 10vh;
 }
 
@@ -1071,7 +1094,7 @@ min-width: 4rem;
 }
 
 footer {
-  padding-top: 20vh;
+  padding-top: 2vh;
 }
 
 .global-footer {
@@ -1329,10 +1352,176 @@ li, .copyright {
 
 */
 
+/* 48em = 768px */
+
+/* RESPONSIVE HAMBURGER MENU. */
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #171717;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  padding-top: 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #171717;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #171717;
+  width: 100%;
+}
+
+.header .logo {
+  display: block;
+  text-decoration: none;
+  max-width: 7.5rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  width: 100%;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: block;
+  float: right;
+  padding: 1vw 8vw;
+  position: relative;
+  user-select: none;
+  padding-bottom: 2rem;
+  margin-top: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  vertical-align: middle;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.header .menu-icon .navicon {
+  background: #D9D9D9;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #ffffff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.menu {
+  flex-direction: column;
+  text-align: left;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 20vh;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
+
+  .menu {
+    flex-direction: row;
+  }
 
   .project-description {
     font-size: 1.5rem;
@@ -1783,6 +1972,8 @@ margin-left: -.4vw;
     width: 100vw;
     min-width: 100%;
     border-radius: 14px;
+      height:90vh;
+  max-width: 97vw;
   }
 
   .grid {
@@ -1820,6 +2011,11 @@ margin-left: -.4vw;
   .work-blurb {
     padding-left: 3rem;
     padding-right: 10rem;
+    font-size: 3.5rem;
+  }
+
+  .work-blurb-paragraph {
+    padding-top: 6rem;
   }
 
   .program-software-row {
@@ -1850,6 +2046,8 @@ margin-left: -.4vw;
   width: 100vw;
   min-width: 100%;
   border-radius: 14px;
+  max-height: 90vh;
+  height: 90%;
 }
 
   /* This is the perfect dimensions for desktop*/
@@ -2023,6 +2221,10 @@ margin-left: -.4vw;
 
 .logo {
   width: 5.5vw;
+}
+
+.next-project {
+  text-align: center;
 }
 
 }
