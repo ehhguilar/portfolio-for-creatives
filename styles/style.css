@@ -117,9 +117,6 @@ button:hover {
   box-sizing: inherit;
 }
 
-.next-project {
-  padding-top: 4rem;
-}
 
 
 
@@ -369,6 +366,10 @@ a:active {
   background-repeat: no-repeat;
   background-position: center center;
   cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v4.cur"), auto;
+}
+
+.gremmy-animation:hover {
+  cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v4.cur"), pointer;
 }
 
 .heart {
@@ -667,6 +668,16 @@ min-width: 4rem;
     object-position: 5% 50%;
   }
 
+    .featured-project-button {
+    position: absolute;
+    top: 95%; 
+    color: #fff; 
+    padding: 10vw 3.5vh; 
+    font-size: 20px; 
+    text-align: left;
+    object-position: 5% 50%;
+  }
+
 
   .featured-project-overlay-text, h2 {
     font-size: 2rem;
@@ -731,6 +742,7 @@ min-width: 4rem;
 
 .next-project {
   text-align: center;
+  padding-bottom: 10vh;
 }
 
 .work-blurb {
@@ -809,8 +821,8 @@ min-width: 4rem;
 .portfolio-project-images {
   min-width: 100%;
   justify-content: center;
-  padding-left: 2vh;
-  padding-right: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 /* Defining the work page grid */
@@ -941,7 +953,7 @@ min-width: 4rem;
   cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), auto;
   }
 
-.brand-logo {
+.brand-logo, a {
     cursor: url("../assets/branding-images/nathanaguilar-cursor-hover-v3.cur"), auto;
  }
   
@@ -1258,6 +1270,10 @@ padding-left: 2.2rem;
   ); */
 }
 
+.sanctity-gif {
+  width: 100%;
+}
+
 /* 
 
 ██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
@@ -1322,6 +1338,10 @@ li, .copyright {
   margin-bottom: .25rem;
 }
 
+.next-project {
+  padding-top: 5vh;
+}
+
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -1356,6 +1376,27 @@ li, .copyright {
   color: var(--accent-color);
 }
 
+.project-image-grid{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.youtube-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
 /*
 
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
@@ -1367,7 +1408,7 @@ li, .copyright {
 */
 
 /* 48em = 768px */
-m
+
 /* RESPONSIVE HAMBURGER MENU. */
 a {
   color: #000;
@@ -1445,7 +1486,6 @@ a {
   justify-content: center;
   justify-items: center;
   align-content: center;
-  vertical-align: middle;
   justify-content: center;
   padding-top: 2rem;
 }
@@ -1530,6 +1570,27 @@ a {
     padding-top: 2rem;
   }
 
+  .project-image-grid{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .youtube-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  
+  
+  .youtube-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1586,6 +1647,30 @@ a {
   .contact-row {
   padding-top: 5%;
   
+  }
+
+  .project-image-grid{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+
+
+
+  .youtube-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+
+  .youtube-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1765,6 +1850,11 @@ width: auto;
     justify-content: flex-start;
   }
 
+  .project-image-grid{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
   .arrow {
     padding-right: 1rem;
   }
@@ -1932,6 +2022,27 @@ footer {
   min-width: 100vw;
 }
 
+.project-image-grid{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.youtube-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 }
 
 
@@ -2008,6 +2119,27 @@ padding-top: 12%;
 .contact-row li {
 margin: 20px 10px;          /* Add some space between images */
 margin-left: -.4vw;
+}
+
+.project-image-grid{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.youtube-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 }
@@ -2298,5 +2430,29 @@ margin-left: -.4vw;
 .about-image {
   padding-left: 1rem;
 }
+
+.youtube-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.global-footer {
+  width: 100vw;
+}
+
+.footer-color {
+  max-width: 100vw;
+  width: auto;
+    }
 
 }
