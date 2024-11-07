@@ -1378,11 +1378,22 @@ li, .copyright {
   font-family: sans-serif;
 }
 
+
+
 .ascii-art {
   font-family: monospace;
   white-space: pre;
   width: 100%;
   height: 100%;
+  font-size: 0.7rem;
+}
+
+.error-page-title {
+  font-size: 3rem;
+}
+
+.error-page-title-p {
+  font-size: 2rem;
 }
 
 .text-underline {
@@ -1451,6 +1462,19 @@ li, .copyright {
 
 .about-item-2 {
   font-size: 2rem;
+}
+
+.error-page pre{
+  width: 100vw;
+  height: auto;
+  align-content: center;
+}
+
+.error-page {
+  width: 100vw;
+  height: auto;
+  align-content: center;
+  padding: 3rem;
 }
 
 a {
@@ -2507,6 +2531,10 @@ margin-left: -.4vw;
 
 .error-page-p p {
   font-size: 1.5rem;
+}
+
+.about-item-1 {
+  position: sticky;
 }
 
 }
