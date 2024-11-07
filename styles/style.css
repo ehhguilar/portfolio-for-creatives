@@ -1373,8 +1373,22 @@ li, .copyright {
 /* TODO: Customize your 404 Error Page */
 
 .error-page {
-  padding-left: 2rem;
+  text-align: center;
+  background: #1F67B1;
+  font-family: sans-serif;
 }
+
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  width: 100%;
+  height: 100%;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
 
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
@@ -2450,7 +2464,6 @@ margin-left: -.4vw;
 
 .featured-project-button {
   position: absolute;
-  top: 92%; 
   color: #fff; 
   padding: 0; 
   padding-left: 5.8rem;
