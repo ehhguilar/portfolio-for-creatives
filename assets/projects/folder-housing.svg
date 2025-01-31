@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><style>.cls-1{fill:#d9d9d9;fill-rule:evenodd;}</style></defs><path class="cls-1" d="M1463.68,291.94v551.83c0,5.53-4.48,10-10,10H456.76V236.53c0-5.52,4.48-10,10-10h395.47c3.18,0,6.17,1.51,8.06,4.08l37.71,51.33h545.68c5.52,0,10,4.48,10,10Z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-rule: evenodd;
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-1" d="M1463.7,291.9v551.8c0,5.5-4.5,10-10,10H456.8V236.5c0-5.5,4.5-10,10-10h395.5c3.2,0,6.2,1.5,8.1,4.1l37.7,51.3h545.7c5.5,0,10,4.5,10,10h0Z"/>
+    </clipPath>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.4, SVG Export Plug-In . SVG Version: 1.2.0 Build 166)  -->
+  <g>
+    <g id="Layer_1">
+      <g class="cls-2">
+        <image width="1920" height="1080" transform="translate(-920.8 -369.5) scale(2)" xlink:href="affinity-odyssey/affinity-odyssey-cover-art.jpg"/>
+      </g>
+    </g>
+  </g>
+</svg>
